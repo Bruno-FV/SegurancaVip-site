@@ -31,7 +31,7 @@ li {
     height: auto;
     z-index: 1;
     position: fixed;
-    border-bottom: 2px solid rgba(255, 205, 0, 1);
+    border-bottom: 4px solid rgba(255, 205, 0, 1);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -39,7 +39,7 @@ li {
 body {
     background: rgb(255, 240, 0);
     background: linear-gradient(139deg, rgba(255, 240, 0, 1) 0%, rgba(255, 205, 0, 1) 4%, rgba(0, 0, 0, 1) 96%);
-    color: white;
+    color: black;
 }
 
 .navbar button {
@@ -116,7 +116,7 @@ body {
     max-width: 35em;
     height: auto;
     background-color: black;
-    color: white;
+    color: rgba(255, 205, 0, 1);
     -webkit-box-shadow: 0px 0px 65px 10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 65px 10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 65px 10px rgba(0, 0, 0, 0.75);
@@ -157,6 +157,7 @@ li {
 
 #contato {
     background-color: rgb(33, 32, 32);
+    color: rgba(255, 205, 0, 1);
 }
 
 #contato p {
