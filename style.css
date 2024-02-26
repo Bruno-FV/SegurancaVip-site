@@ -87,20 +87,34 @@ body {
 }
 
 #texto-banner {
-    top: 35vh;
+    top: 25vh;
     left: 3rem;
 }
 
 #texto-banner h1 {
-    font-size: 6vw;
+    font-size: 7vw;
 }
 
 #texto-banner p {
-    font-size: 15vw;
+    font-size: 18vw;
 }
 
 #texto-banner h2 {
-    font-size: 2vw;
+    font-size: 3vw;
+}
+@media (max-width: 678px) {
+       
+    #texto-banner h1 {
+        font-size: 9vw;
+    }
+    
+    #texto-banner p {
+        font-size: 27vw;
+    }
+    
+    #texto-banner h2 {
+        font-size: 6vw;
+    }
 }
 
 #texto-servicos {
