@@ -60,6 +60,7 @@ body {
 .nav-link:hover {
     background-color: black;
     border: 2px solid rgba(255, 205, 0, 1);
+    color: #f4f104;
     font-weight: 800
 }
 
@@ -163,14 +164,26 @@ li {
 
 #contato .container {
     width: 100%;
-    height: 95vh;
+    height: auto;
 }
-#contato p {
+#contato p, a {
     text-align: justify;
+    color: #f4f104;
 }
 
 #logo-contato {
     max-width: 40vw;
+}
+#contato button{
+    background-color: #f4f104;
+    color: #1c1c1c;
+    font-weight: 800;
+}
+#contato button:hover{
+    background-color: black;
+    border: 2px solid rgba(255, 205, 0, 1);
+    color: #f4f104;
+    font-weight: 800;
 }
 
 footer {
