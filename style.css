@@ -39,6 +39,7 @@ li {
 body {
     background: #1c1c1c;
     color: #f4f104;
+    overflow-x: hidden;
 }
 
 .navbar button {
@@ -185,6 +186,7 @@ li {
     color: #f4f104;
     font-weight: 800;
 }
+
 
 footer {
     background-color: rgb(33, 32, 32);

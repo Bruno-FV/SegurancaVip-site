@@ -1,3 +1,10 @@
+AOS.init({
+    offset: 100, // Deslocamento do início da animação em pixels
+    duration: 1500, // Duração da animação em milissegundos
+    easing: '', // Tipo de easing (pode ser "linear", "ease", "ease-in", "ease-out", "ease-in-out")
+    once: false, // A animação só ocorrerá uma vez
+});
+
 /**
  * Função para gerar QRCode
  */
@@ -28,7 +35,9 @@ function generateQRCodeAndAnimate() {
     new QRCode(document.getElementById("qrcodeContainer"), {
         text: linkRedirecionamento,
         width: 550,
-        height: 500
+        height: 500,
+        correctLevel: QRCode.CorrectLevel.H, // Nível de correção de erros mais alto
+        version: 10 // Escolher uma versão mais alta
     });
     const fechar = document.getElementById("fecharQRCode");
     fechar.classList.add('btn-close');
@@ -71,3 +80,19 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     // Redireciona para o link do WhatsApp
     window.location.href = link;
 });
+
+// Exemplo de validação personalizada em JavaScript (opcional)
+(function() {
+    'use strict';
+    var forms = document.querySelectorAll('.needs-validation');
+    Array.prototype.slice.call(forms)
+        .forEach(function(form) {
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+})();
